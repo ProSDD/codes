@@ -39,3 +39,14 @@ These baselines are provided to help the community efficiently use the ASVspoof 
 
 ### Evaluation Scores
 We also release the evaluation scores for all provided checkpoints.
+
+### Running the Code
+
+The repository provides separate scripts for each stage of the ProSDD pipeline:
+
+- `extract_Prosody.py`: Extract frame-level prosody embeddings
+- `main_stage1real.py`: Train Stage 1 using bonafide speech
+- `main_stage2realfake.py`: Train Stage 2 using bonafide and spoofed speech
+- `main_eval.py`: Evaluate a trained ProSDD checkpoint
+
+The speaker embeddings required as supervised targets are available in the Google Drive folder linked above. Frame-level prosody embeddings can be generated using `extract_Prosody.py`.

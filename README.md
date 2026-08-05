@@ -1,11 +1,21 @@
-## Environment Setup
+## Getting Started
 
-Create the Conda environment using:
+### Clone the Repository
+
+```bash
+git clone https://github.com/ProSDD/codes.git
+cd codes
+```
+
+### Setup Environment
+
+Create and activate the environment:
 
 ```bash
 conda env create -f environment.yml
 conda activate prosdd
 ```
+
 ## Implementation Guidelines
 
 ### Pre-trained Checkpoints and Supervised Targets

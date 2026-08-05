@@ -1,3 +1,11 @@
+## Environment Setup
+
+Create the Conda environment using:
+
+```bash
+conda env create -f environment.yml
+conda activate prosdd
+```
 ## Implementation Guidelines
 
 ### Pre-trained Checkpoints and Supervised Targets

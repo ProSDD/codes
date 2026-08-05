@@ -15,6 +15,11 @@ Create and activate the environment:
 conda env create -f environment.yml
 conda activate prosdd
 ```
+### Pre-trained SSL Backbone
+
+ProSDD uses [`facebook/wav2vec2-xls-r-300m`](https://huggingface.co/facebook/wav2vec2-xls-r-300m) as the pre-trained speech encoder for both Stage 1 and Stage 2.
+
+The model is downloaded automatically through the Hugging Face `transformers` library when the training or evaluation scripts are run for the first time.
 
 ## Implementation Guidelines
 

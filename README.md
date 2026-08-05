@@ -40,6 +40,19 @@ These baselines are provided to help the community efficiently use the ASVspoof 
 ### Evaluation Scores
 We also release the evaluation scores for all provided checkpoints.
 
+### Prosody Extraction Environment
+
+Frame-level prosody embeddings are extracted using the [Masked Prosody Model](https://huggingface.co/cdminix/masked_prosody_model).
+
+Create and activate the prosody extraction environment:
+
+```bash
+conda env create -f environment_prosody.yml
+conda activate prosody_extraction
+```
+
+The speaker embeddings used as supervised targets are available in the Google Drive folder linked above.
+
 ### Running the Code
 
 The repository provides separate scripts for each stage of the ProSDD pipeline:
@@ -48,5 +61,3 @@ The repository provides separate scripts for each stage of the ProSDD pipeline:
 - `main_stage1real.py`: Train Stage 1 using bonafide speech
 - `main_stage2realfake.py`: Train Stage 2 using bonafide and spoofed speech
 - `main_eval.py`: Evaluate a trained ProSDD checkpoint
-
-The speaker embeddings required as supervised targets are available in the Google Drive folder linked above. Frame-level prosody embeddings can be generated using `extract_Prosody.py`.

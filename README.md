@@ -1,3 +1,11 @@
+# ProSDD
+
+Official implementation of the paper:
+
+**ProSDD: Learning Prosodic Representations for Speech Deepfake Detection against Expressive and Emotional Attacks**
+
+[arXiv Paper](https://arxiv.org/abs/2604.13229)
+
 ## Getting Started
 
 ### Clone the Repository
